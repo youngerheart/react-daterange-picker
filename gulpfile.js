@@ -10,9 +10,9 @@ var extReplace = require('gulp-ext-replace');
 var watch = require('gulp-watch');
 var babel = require('gulp-babel');
 var connect = require('gulp-connect');
-var sass = require('gulp-sass');
+//var sass = require('gulp-sass');
 var deploy = require('gulp-gh-pages');
-var React = require('react');
+//var React = require('react');
 var webpack = require('webpack');
 var gulpWebpack = require('gulp-webpack');
 

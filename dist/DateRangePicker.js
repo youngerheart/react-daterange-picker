@@ -14,6 +14,10 @@ var _moment = require('moment');
 
 var _moment2 = _interopRequireDefault(_moment);
 
+var _momentLocaleZhCnJs = require('moment/locale/zh-cn.js');
+
+var _momentLocaleZhCnJs2 = _interopRequireDefault(_momentLocaleZhCnJs);
+
 require('moment-range');
 
 var _immutable = require('immutable');
@@ -51,6 +55,8 @@ var _PaginationArrow2 = _interopRequireDefault(_PaginationArrow);
 var _utilsIsMomentRange = require('./utils/isMomentRange');
 
 var _utilsIsMomentRange2 = _interopRequireDefault(_utilsIsMomentRange);
+
+_moment2['default'].locale('zh-cn', _momentLocaleZhCnJs2['default']);
 
 var PureRenderMixin = _reactAddons2['default'].addons.PureRenderMixin;
 var absoluteMinimum = (0, _moment2['default'])(new Date(-8640000000000000 / 2)).startOf('day');

@@ -18,6 +18,10 @@ var _moment = require('moment');
 
 var _moment2 = _interopRequireDefault(_moment);
 
+var _momentLocaleZhCnJs = require('moment/locale/zh-cn.js');
+
+var _momentLocaleZhCnJs2 = _interopRequireDefault(_momentLocaleZhCnJs);
+
 require('moment-range');
 
 var _calendar = require('calendar');
@@ -43,6 +47,8 @@ var _utilsIsMomentRange2 = _interopRequireDefault(_utilsIsMomentRange);
 var _utilsPureRenderMixin = require('../utils/PureRenderMixin');
 
 var _utilsPureRenderMixin2 = _interopRequireDefault(_utilsPureRenderMixin);
+
+_moment2['default'].locale('zh-cn', _momentLocaleZhCnJs2['default']);
 
 var lang = (0, _moment2['default'])().localeData();
 

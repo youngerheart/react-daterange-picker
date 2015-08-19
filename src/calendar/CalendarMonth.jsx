@@ -1,5 +1,7 @@
 import React from 'react/addons';
 import moment from 'moment';
+import moment_cn from 'moment/locale/zh-cn.js';
+moment.locale('zh-cn', moment_cn);
 import {} from 'moment-range';
 import calendar from 'calendar';
 import Immutable from 'immutable';
@@ -8,7 +10,6 @@ import BemMixin from '../utils/BemMixin';
 import CustomPropTypes from '../utils/CustomPropTypes';
 import isMomentRange from '../utils/isMomentRange';
 import PureRenderMixin from '../utils/PureRenderMixin';
-
 const lang = moment().localeData();
 
 const WEEKDAYS = Immutable.List(lang._weekdays).zip(Immutable.List(lang._weekdaysShort));
